@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="codesheet.js"></script>
+      </head>
 <body>
-<h1>Hello World</h1>
-<p> I'm hosted with Github Pages</p>
+    <h1>Welcome to Fantasy Basho!</h1>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'members')">League Members</button>
+      <button class="tablinks" onclick="openTab(event, 'matches')">Today's Matches</button>
+      <button class="tablinks" onclick="openTab(event, 'rikishi')">Rikishi Standings</button>
+      <button class="tablinks" onclick="openTab(event, 'admin')">Admin</button>
+    </div>
+    
+    <div id="members" class="tabContents">
+      <ul>
+        <li>Rick</li>
+        <li>Aaron</li>
+        <li>Josh</li>
+        <li>Rachel</li>
+        <li>Ian</li>
+        <li>Nick</li>
+        <li>Phil<li>
+      </ul>
+    </div>
+    
+    <div id="matches" class="tabContents">
+      <h1>a list of matches for today goes here</h1>
+    </div>
+    
+    <div id="rikishi" class="tabContents">
+      <h1>a list of rikishi and their current standings goes here</h1>
+    </div>
+    
+    <div id="admin" class="tabContents">
+      <p>manage shit from here</p>
+    </div>
 </body>
 </html>
