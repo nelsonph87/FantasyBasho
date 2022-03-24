@@ -1,0 +1,21 @@
+---
+layout: default
+title: Fantasy Basho
+---
+
+<h2>Rikishi Scorecard</h2>
+
+<!-- Organizations -->
+{% assign Scorecard = site.data.Scorecard %}
+{% assign Scorecard = Scorecard | sort:"Rikishi" %}
+
+<!-- Document -->
+
+{% for rikishi in Scorecard %}
+
+<ul>
+<li><strong>{{ Scorecard.Rikishi }}</strong> ({{ Scorecard.Rank }}, {{ Rikishi.Record }})</li>
+</ul>
+
+{% endfor %}
+
