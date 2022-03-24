@@ -21,7 +21,7 @@
         <li>Rachel</li>
         <li>Ian</li>
         <li>Nick</li>
-        <li>Phil<li>
+        <li>Phil</li>
       </ul>
     </div>
     
@@ -30,7 +30,21 @@
     </div>
     
     <div id="rikishi" class="tabContents">
-      <h1>a list of rikishi and their current standings goes here</h1>
+      <h2>Rikishi Scorecard</h2>
+
+<!-- Organizations -->
+{% assign Scorecard = site.data.Scorecard %}
+{% assign Scorecard = Scorecard | sort:"Rikishi" %}
+
+<!-- Document -->
+
+{% for rikishi in Scorecard %}
+
+<ul>
+<li><strong>{{ Scorecard.Rikishi }}</strong> ({{ Scorecard.Rank }}, {{ Rikishi.Record }})</li>
+</ul>
+
+{% endfor %}
     </div>
     
     <div id="admin" class="tabContents">
