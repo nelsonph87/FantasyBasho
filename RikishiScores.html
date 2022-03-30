@@ -6,15 +6,15 @@ title: Fantasy Basho
 <h2>Rikishi Scorecard</h2>
 
 <!-- Organizations -->
-{% assign Scorecard = site.data.Scorecard %}
-{% assign Scorecard = Scorecard | sort:"Rikishi" %}
+{% assign scorecard = site.data.scorecard %}
+{% assign scorecard = scorecard | sort:"Rikishi" %}
 
 <!-- Document -->
 
-{% for rikishi in Scorecard %}
+{% for Rikishi in scorecard %}
 
 <ul>
-<li><strong>{{ Scorecard.Rikishi }}</strong> ({{ Scorecard.Rank }}, {{ Rikishi.Record }})</li>
+<li><strong>{{ scorecard.Rikishi }}</strong> ({{ scorecard.Rank }}, {{ Rikishi.Record }})</li>
 </ul>
 
 {% endfor %}
