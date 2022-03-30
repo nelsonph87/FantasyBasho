@@ -31,20 +31,8 @@
     
     <div id="rikishi" class="tabContents">
       <h2>Rikishi Scorecard</h2>
+      <a href="RikishiScores.html">Rikishi Scorecard</a>
 
-<!-- Organizations -->
-{% assign Scorecard = site.data.Scorecard %}
-{% assign Scorecard = Scorecard | sort:"Rikishi" %}
-
-<!-- Document -->
-
-{% for rikishi in Scorecard %}
-
-<ul>
-<li><strong>{{ Scorecard.Rikishi }}</strong> ({{ Scorecard.Rank }}, {{ Rikishi.Record }})</li>
-</ul>
-
-{% endfor %}
     </div>
     
     <div id="admin" class="tabContents">
